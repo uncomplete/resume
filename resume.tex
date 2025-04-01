@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in LateX
+% Author : Eric Eastman
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Eric Eastman}} & Email: \href{mailto:ereastman96@gmail.com}{ereastman96@gmail.com}\\
+  \href{https://github.com/uncomplete}{github.com/uncomplete} & Mobile: \href{tel:+18455941521}{+1-845-594-1521} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rensselaer Polytechnic Institute}{Troy, NY}
+      {Bachelors of Science in Computer and Systems Engineering; GPA: 3.50}{Aug 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Amazon Web Services}{NYC, NY}
+    {Software Development Engineer}{Dec 2021 -- Present}
+    \resumeItemListStart
+      \resumeItem{AI-Powered Feedback Intelligence Platform}
+        {Led architecture and implementation of an LLM-based system processing 20,000+ unstructured customer and advertiser feedback submissions monthly. Designed comprehensive data models, engineered custom LLM prompts, and created an intuitive UI enabling users to generate, apply, and filter feedback tags dynamically. This system transformed Amazon's feedback management capabilities, allowing product managers to efficiently analyze customer sentiment at scale and directly incorporate insights into product development cycles.}
+      \resumeItem{AI-Enabled Content Moderation Service}
+        {Architected and implemented a high-throughput moderation service processing 75+ TPS, leveraging multiple ML models for image recognition and LLM-based content analysis. Led cross-functional collaboration with data scientists to design scoring algorithms with configurable risk thresholds.}
+      \resumeItem{New Product Launch Badge System}
+        {Led customer targeting for a strategic product badge initiative for trusted Amazon sellers, developing machine learning models for customer preference prediction and expected revenue forecasting. Engineered an automated badge placement system that reduced time-to-peak revenue by 23\% for participating retailers, directly impacting the bottom line for thousands of Amazon marketplace sellers.}
+      \resumeItem{Financial Reconciliation Platform}
+        {Designed and scaled a mission-critical bookkeeping service handling over \$20M in quarterly ad revenue, implementing robust error handling, data consistency mechanisms, and comprehensive audit logging.}
+      \resumeItem{Cloud Security Authentication Service}
+        {Developed an SSH-based authentication service for AWS Security, implementing core encryption protocols, cross-platform compatibility, and zero-trust security principles. Led security reviews and ensured compliance with AWS's stringent security requirements.}
+      \resumeItem{Technical Leadership}
+        {Led architecture and security design reviews for multiple services, established testing best practices, mentored junior engineers, and worked with cross-functional stakeholders to deliver reliable, maintainable solutions at scale.}
+      \resumeItem{Tech}
+        {Java, Python, Typescript, Spring, React, AWS CDK, API Gateway, ECS, RDS, S3, Lambda, SQS, SNS, Docker}
+    \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 -- Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+
+%-------------------------------------------
+
+  \resumeSubheading
+    {IBM Quantum}{Yorktown, NY}
+    {Software Engineer}{Jul 2018 -- Mar 2021}
+    \resumeItemListStart
+      \resumeItem{Hardware Abstraction Layer}
+        {Maintained and enhanced core hardware abstraction code for quantum computing systems, improving reliability and performance of quantum circuit execution on physical hardware.}
+      \resumeItem{Language Development}
+        {Implemented a custom quantum programming language specification using LLVM, Pybind, and CMake, enabling researchers to express quantum algorithms more intuitively.}
+      \resumeItem{Simulation}
+        {Modernized C++ simulator codebase to C++11 standards, improved documentation with Doxygen, and expanded the Qiskit simulator interface with Pybind bindings, resulting in 30\% improved performance.}
+      \resumeItem{Quantum Experiment Tracking}
+        {Developed a REST API and web application for tracking quantum experiment specifications and results, enabling faster research iteration and improved collaboration between hardware and algorithm teams.}
+      \resumeItem{Tech}
+        {C++, Python, Pybind, CMake, LLVM, Doxygen, Flask, Docker, Kubernetes}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {IBM Systems}{East Fishkill, NY}
+    {Co-Op Engineer}{Feb 2016 -- Aug 2017}
+    \resumeItemListStart
+      \resumeItem{Semiconductor Design Verification}
+        {Designed and implemented VLSI design verification tools using Tcl, Bash, and SVRF, contributing to IBM's 14nm production rollout and early 7nm development.}
+      \resumeItem{Layout-Based Monte Carlo Simulator}
+        {Authored and presented a conference paper and patent on a novel Layout-Based Monte Carlo Simulator (LBMCS) for advanced process technology verification, reducing time-to-market for new semiconductor nodes.}
+      \resumeItem{Manufacturing Yield Analysis}
+        {Applied statistical methods to analyze manufacturing defect data using defect-limited yield models, providing actionable insights to improve production yields.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source Python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{GitHub Visualization}
+%      {Data visualization of Git log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+%  \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+%\section{Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
